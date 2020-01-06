@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Onsurvey</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" href="/assets/favicon.ico" type="image/gif" sizes="16x16">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/assets/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/animate.min.css" rel="stylesheet">
+    <link href="/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/assets/lightbox.min.css" rel="stylesheet">
+    <link href="/assets/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="container-fluid">
+        <div class="pull-left" id="logo">
+          <h1><a href="#intro" class="scrollto">OnSurvey</a></h1>
+        </div>
+
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="#intro">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li class="menu-has-children"><a href="">Company</a>
+              <ul>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">TEAM</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <button type="button" class="btn-log" data-toggle="modal" data-target="#exampleModalCenter">login</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <%= yield %>
+
+    <script src="/assets/jquery.min.js"></script>
+    <script src="/assets/jquery-migrate.min.js"></script>
+    <script src="/assets/bootstrap.bundle.min.js"></script>
+    <script src="/assets/easing.min.js"></script>
+    <script src="/assets/hoverIntent.js"></script>
+    <script src="/assets/superfish.min.js"></script>
+    <script src="/assets/wow.min.js"></script>
+    <script src="/assets/waypoints.min.js"></script>
+    <script src="/assets/counterup.min.js"></script>
+    <script src="/assets/owl.carousel.min.js"></script>
+    <script src="/assets/isotope.pkgd.min.js"></script>
+    <script src="/assets/lightbox.min.js"></script>
+    <script src="/assets/jquery.touchSwipe.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="/assets/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="/assets/main.js"></script>
+
+  </body>
+</html>
